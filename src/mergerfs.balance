@@ -179,7 +179,7 @@ def human_to_bytes(s):
 
 
 def buildargparser():
-    parser = argparse.ArgumentParser(description='balance files on a mergerfs mount based on percentage drive filled')
+    parser = argparse.ArgumentParser(description='balance files on a mergerfs mount based on percentage drive filled. files with hardlinks will not be moved')
     parser.add_argument('dir',
                         type=str,
                         help='starting directory')
